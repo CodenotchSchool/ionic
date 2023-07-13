@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Vista de Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<ion-list>
+  <ion-item>
+    <ion-label position="stacked">Id usuario</ion-label>
+    <ion-input type="text" #userId></ion-input>
+  </ion-item>
+</ion-list>
+<hr>
+<div *ngIf="usuario!=null">
+  Nombre:{{usuario.nombre}} <br>
+  Apellido1:{{usuario.apellido1}} <br>
+  Apellido2:{{usuario.apellido2}} <br>
+<hr>
+</div>
+
+  <ion-button color="success" expand="block" (click) = "mostrarUsuario(userId.value)">Mostrar</ion-button>
+  <ion-button expand="block" routerLink="/home" routerDirection="back">Home</ion-button>
+</ion-content>

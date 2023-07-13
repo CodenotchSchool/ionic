@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Formulario de Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<ion-list>
+  <ion-item>
+    <ion-label position="stacked">Nombre</ion-label>
+    <ion-input type="text" #userName></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Apellido1</ion-label>
+    <ion-input type="text" #userApp1></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Apellido2</ion-label>
+    <ion-input type="text" #userApp2></ion-input>
+  </ion-item>
+</ion-list>
+  <ion-button color="success" expand="block" (click) = "insertarUsuario(userName, userApp1, userApp2)">Insertar</ion-button>
+  <ion-button expand="block" routerLink="/home" routerDirection="back">Home</ion-button>
+
+</ion-content>

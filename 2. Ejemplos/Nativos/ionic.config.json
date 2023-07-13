@@ -1,0 +1,7 @@
+{
+  "name": "dia9",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
